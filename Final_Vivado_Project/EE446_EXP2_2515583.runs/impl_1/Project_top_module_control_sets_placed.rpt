@@ -1,0 +1,355 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Mar 20 17:26:05 2025
+| Host         : DESKTOP-4904BLP running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Project_top_module_control_sets_placed.rpt
+| Design       : Project_top_module
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   277 |
+|    Minimum number of control sets                        |   277 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |     7 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   277 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |   256 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    19 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               9 |            8 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              64 |           31 |
+| Yes          | No                    | No                     |            2592 |         1679 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+----------------------------------------------------+------------------------+------------------+----------------+--------------+
+|     Clock Signal     |                    Enable Signal                   |    Set/Reset Signal    | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------+----------------------------------------------------+------------------------+------------------+----------------+--------------+
+|  buttons_BUFG[4]     |                                                    |                        |                4 |              4 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG |                                                    |                        |                4 |              5 |         1.25 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_94[0]  |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_99[0]  |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_67[0]  |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_9[0]   |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/E[0]                 |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_10[0]  |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_105[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_108[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_110[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_112[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_113[0] |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_104[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_109[0] |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_101[0] |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_107[0] |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_103[0] |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_111[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_0[0]   |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_100[0] |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_102[0] |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_106[0] |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_11[0]  |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_1[0]   |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_157[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_122[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_143[0] |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_155[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_144[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_152[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_128[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_150[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_162[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_166[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_167[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_168[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_17[0]  |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_170[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_115[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_123[0] |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_13[0]  |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_140[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_147[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_149[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_159[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_160[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_171[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_119[0] |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_120[0] |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_126[0] |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_133[0] |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_135[0] |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_15[0]  |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_127[0] |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_14[0]  |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_139[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_142[0] |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_158[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_161[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_12[0]  |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_134[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_148[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_16[0]  |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_118[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_132[0] |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_138[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_137[0] |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_116[0] |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_130[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_141[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_145[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_164[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_165[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_117[0] |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_131[0] |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_163[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_169[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_124[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_125[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_146[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_156[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_114[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_129[0] |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_121[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_136[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_151[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_153[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_154[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_224[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_204[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_187[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_197[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_175[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_211[0] |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_178[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_188[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_21[0]  |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_225[0] |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_226[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_227[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_228[0] |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_229[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_198[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_205[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_179[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_20[0]  |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_192[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_203[0] |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_176[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_182[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_193[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_173[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_200[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_195[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_183[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_185[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_19[0]  |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_190[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_194[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_202[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_208[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_209[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_181[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_186[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_191[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_196[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_199[0] |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_18[0]  |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_180[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_212[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_189[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_214[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_213[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_216[0] |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_217[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_218[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_219[0] |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_2[0]   |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_177[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_22[0]  |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_222[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_172[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_206[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_207[0] |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_220[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_201[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_210[0] |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_221[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_174[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_215[0] |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_184[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_223[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_51[0]  |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_238[0] |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_35[0]  |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_245[0] |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_36[0]  |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_42[0]  |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_243[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_47[0]  |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_37[0]  |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_53[0]  |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_56[0]  |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_26[0]  |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_57[0]  |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_58[0]  |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_234[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_239[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_254[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_23[0]  |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_55[0]  |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_237[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_251[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_253[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_30[0]  |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_241[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_44[0]  |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_46[0]  |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_25[0]  |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_31[0]  |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_33[0]  |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_242[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_235[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_38[0]  |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_39[0]  |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_29[0]  |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_250[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_246[0] |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_248[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_3[0]   |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_34[0]  |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_45[0]  |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_49[0]  |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_28[0]  |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_48[0]  |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_232[0] |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_247[0] |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_40[0]  |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_5[0]   |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_41[0]  |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_236[0] |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_252[0] |                        |                2 |              8 |         4.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_52[0]  |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_54[0]  |                        |                2 |              8 |         4.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_27[0]  |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_24[0]  |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_230[0] |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_240[0] |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_231[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_244[0] |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_4[0]   |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_43[0]  |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_50[0]  |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_233[0] |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_249[0] |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_32[0]  |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_97[0]  |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_92[0]  |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_61[0]  |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_82[0]  |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_60[0]  |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_79[0]  |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_84[0]  |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_6[0]   |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_68[0]  |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_70[0]  |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_75[0]  |                        |                2 |              8 |         4.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_77[0]  |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_96[0]  |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_90[0]  |                        |                2 |              8 |         4.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_74[0]  |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_7[0]   |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_78[0]  |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_98[0]  |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_87[0]  |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_8[0]   |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_69[0]  |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_86[0]  |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_59[0]  |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_73[0]  |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_76[0]  |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_80[0]  |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_71[0]  |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_72[0]  |                        |                8 |              8 |         1.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_93[0]  |                        |                7 |              8 |         1.14 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_66[0]  |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_85[0]  |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_62[0]  |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_63[0]  |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_89[0]  |                        |                4 |              8 |         2.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_91[0]  |                        |                3 |              8 |         2.67 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_95[0]  |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_64[0]  |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_81[0]  |                        |                6 |              8 |         1.33 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_65[0]  |                        |                2 |              8 |         4.00 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_83[0]  |                        |                5 |              8 |         1.60 |
+|  buttons_BUFG[4]     | my_computer/my_datapath/PCreg/mem[0][7]_i_7_88[0]  |                        |                4 |              8 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG |                                                    | mssd_0/idx_0           |                9 |             32 |         3.56 |
+|  CLK100MHZ_IBUF_BUFG | debouncer_0/count[0]0                              |                        |                8 |             32 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | debouncer_0/debouncer_count[4].count[4][0]_i_1_n_0 |                        |                8 |             32 |         4.00 |
+|  buttons_BUFG[4]     |                                                    | debouncer_0/buttons[0] |               22 |             32 |         1.45 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/PCreg/we05_out             |                        |               19 |             32 |         1.68 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/PCreg/we019_out            |                        |               21 |             32 |         1.52 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/PCreg/we0                  |                        |               20 |             32 |         1.60 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/PCreg/we025_out            |                        |               24 |             32 |         1.33 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/PCreg/we09_out             |                        |               29 |             32 |         1.10 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/PCreg/we023_out            |                        |               27 |             32 |         1.19 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/PCreg/we07_out             |                        |               19 |             32 |         1.68 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/PCreg/we011_out            |                        |               27 |             32 |         1.19 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/PCreg/we013_out            |                        |               25 |             32 |         1.28 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/PCreg/we015_out            |                        |               24 |             32 |         1.33 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/PCreg/we017_out            |                        |               25 |             32 |         1.28 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/PCreg/we01_out             |                        |               22 |             32 |         1.45 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/PCreg/we021_out            |                        |               21 |             32 |         1.52 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/PCreg/we027_out            |                        |               23 |             32 |         1.39 |
+| ~buttons_BUFG[4]     | my_computer/my_datapath/PCreg/we03_out             |                        |               20 |             32 |         1.60 |
++----------------------+----------------------------------------------------+------------------------+------------------+----------------+--------------+
+
+

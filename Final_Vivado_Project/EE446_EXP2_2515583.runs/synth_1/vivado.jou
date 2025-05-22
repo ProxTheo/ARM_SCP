@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Mar 20 17:24:36 2025
+# Process ID: 16736
+# Current directory: C:/Users/bahar/EE446_EXP2_2515583/EE446_EXP2_2515583.runs/synth_1
+# Command line: vivado.exe -log Project_top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Project_top_module.tcl
+# Log file: C:/Users/bahar/EE446_EXP2_2515583/EE446_EXP2_2515583.runs/synth_1/Project_top_module.vds
+# Journal file: C:/Users/bahar/EE446_EXP2_2515583/EE446_EXP2_2515583.runs/synth_1\vivado.jou
+# Running On        :DESKTOP-4904BLP
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :13th Gen Intel(R) Core(TM) i7-13700H
+# CPU Frequency     :2918 MHz
+# CPU Physical cores:14
+# CPU Logical cores :20
+# Host memory       :16802 MB
+# Swap memory       :15032 MB
+# Total Virtual     :31835 MB
+# Available Virtual :12398 MB
+#-----------------------------------------------------------
+source Project_top_module.tcl -notrace

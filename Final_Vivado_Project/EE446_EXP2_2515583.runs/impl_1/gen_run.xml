@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1742480674">
+  <File Type="ROUTE-PWR" Name="Project_top_module_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Project_top_module.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="Project_top_module_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Project_top_module_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="Project_top_module.msk"/>
+  <File Type="ROUTE-CLK" Name="Project_top_module_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="Project_top_module.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Project_top_module_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="Project_top_module.bit"/>
+  <File Type="BG-DRC" Name="Project_top_module.drc"/>
+  <File Type="BG-BGN" Name="Project_top_module.bgn"/>
+  <File Type="BG-BIN" Name="Project_top_module.bin"/>
+  <File Type="BITSTR-RBT" Name="Project_top_module.rbt"/>
+  <File Type="BITSTR-NKY" Name="Project_top_module.nky"/>
+  <File Type="BITSTR-BMM" Name="Project_top_module_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Project_top_module.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Project_top_module_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="Project_top_module.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Project_top_module_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Project_top_module.ltx"/>
+  <File Type="BOOT-PDI-FILE" Name="Project_top_module_boot.pdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="NPI_FILE" Name="Project_top_module.npi"/>
+  <File Type="OPT-DRC" Name="Project_top_module_drc_opted.rpt"/>
+  <File Type="RBD_FILE" Name="Project_top_module.rbd"/>
+  <File Type="OPT-HWDEF" Name="Project_top_module.hwdef"/>
+  <File Type="PLACE-IO" Name="Project_top_module_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Project_top_module_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Project_top_module_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Project_top_module_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Project_top_module_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="Project_top_module_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Project_top_module_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Project_top_module_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Project_top_module_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Project_top_module_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="Project_top_module_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Project_top_module_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Project_top_module_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Project_top_module_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Project_top_module_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Project_top_module_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Project_top_module_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Project_top_module_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Project_top_module_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Project_top_module_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="Project_top_module_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="Project_top_module_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="Project_top_module_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Project_top_module_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="Project_top_module_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Project_top_module_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Project_top_module_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Project_top_module_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Project_top_module_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Project_top_module_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Project_top_module_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Project_top_module_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="Project_top_module_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Project_top_module_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="Project_top_module.pdi"/>
+  <File Type="PL-PDI-FILE" Name="Project_top_module_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="Project_top_module.rcfi"/>
+  <File Type="CFI_FILE" Name="Project_top_module.cfi"/>
+  <File Type="RNPI_FILE" Name="Project_top_module.rnpi"/>
+  <File Type="ROUTE-RQS" Name="Project_top_module_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="Project_top_module_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/ALU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/ALU.v"/>
+        <Attr Name="ImportTime" Val="1742052793"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/Adder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/Adder.v"/>
+        <Attr Name="ImportTime" Val="1742052793"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/Decoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/Decoder.v"/>
+        <Attr Name="ImportTime" Val="1742335384"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/Decoder_4to16.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/Decoder_4to16.v"/>
+        <Attr Name="ImportTime" Val="1742052793"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/Extender.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/Extender.v"/>
+        <Attr Name="ImportTime" Val="1742052793"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/Instruction_memory.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/Instruction_memory.v"/>
+        <Attr Name="ImportTime" Val="1742052793"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/MSSD.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/MSSD.v"/>
+        <Attr Name="ImportTime" Val="1742052793"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/Memory.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/Memory.v"/>
+        <Attr Name="ImportTime" Val="1742052793"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/Mux_16to1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/Mux_16to1.v"/>
+        <Attr Name="ImportTime" Val="1742052793"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/Mux_2to1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/Mux_2to1.v"/>
+        <Attr Name="ImportTime" Val="1742052793"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/Register_en.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/Register_en.v"/>
+        <Attr Name="ImportTime" Val="1742052794"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/Register_file.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/Register_file.v"/>
+        <Attr Name="ImportTime" Val="1742052794"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/Register_reset.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/Register_reset.v"/>
+        <Attr Name="ImportTime" Val="1742052794"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/Register_rsten_neg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/Register_rsten_neg.v"/>
+        <Attr Name="ImportTime" Val="1742052794"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/SSD.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/SSD.v"/>
+        <Attr Name="ImportTime" Val="1742052794"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/Single_Cycle_Computer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/Single_Cycle_Computer.v"/>
+        <Attr Name="ImportTime" Val="1742335500"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/datapath.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/datapath.v"/>
+        <Attr Name="ImportTime" Val="1742335357"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/debouncer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/debouncer.v"/>
+        <Attr Name="ImportTime" Val="1742136519"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/shifter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/shifter.v"/>
+        <Attr Name="ImportTime" Val="1742052794"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/Project_top_module.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/Project_top_module.v"/>
+        <Attr Name="ImportTime" Val="1742335486"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/ID_memory.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/ID_memory.v"/>
+        <Attr Name="ImportTime" Val="1742052793"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/Decoder_2to4.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/Decoder_2to4.v"/>
+        <Attr Name="ImportTime" Val="1742052793"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/Mux_4to1.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/Mux_4to1.v"/>
+        <Attr Name="ImportTime" Val="1742052793"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/Register_rsten.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/Register_rsten.v"/>
+        <Attr Name="ImportTime" Val="1742052794"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE446_EXP2_2515583_Code/Register_simple.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../intelFPGA_lite/23.1std/EE446_EXP2_2515583_Code/Register_simple.v"/>
+        <Attr Name="ImportTime" Val="1742139182"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Project_top_module"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/EE446/Nexys-A7-100T-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE446_Experiment1/EE446_Experiment1.srcs/constrs_1/imports/EE446/Nexys-A7-100T-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1741624657"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/Project_top_module.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>
